@@ -12,6 +12,11 @@ $(document).ready(function () {
     searchWeather($(this).text());
   });
 
+  // clears local storage
+  $("#clear").on("click", function () {
+    localStorage.clear();
+  });
+
   function makeRow(text) {
     var li = $("<li>")
       .addClass("list-group-item list-group-item-action")
